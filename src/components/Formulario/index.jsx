@@ -1,29 +1,75 @@
+import { useMemo, useState } from "react";
+import Botao from "../Botao";
 import CaixaDeTexto from "../CaixaDeTexto";
-import Botao from "../Botao"
-import "./style.css"
+import "./style.css";
 
+const Formulario = ({ lista, setLista }) => {
+  const [nome, setNome] = useState("");
+  const [foto, setFoto] = useState("");
+  const [comidaNaoGosta, setComidaNaoGosta] = useState("");
+  const [experienciaMassa, setExperienciaMassa] = useState("");
 
-const Formulario = () => {
-    // const listaCargos = ['Back-end', 'Front-end', 'Ux/UI design', 'Gestão', 'Fullstack']
+  const limparCampos = () => {
+    setNome("");
+    setFoto("");
+    setExperienciaMassa("");
+    setComidaNaoGosta("");
+  };
 
-    return (
+  const criarCartao = (event) => {
+    event.preventDefault();
 
-        <section className="formulario">
+    const estudante = {
+      nome: nome,
+      foto: foto,
+      comidaQueNaoGosta: comidaNaoGosta,
+      experienciaPositiva: experienciaMassa,
+    };
 
-            <form>
-                <b>Preencha com os dados da mulher referência para criar um card </b>
+    const novaLista = [estudante, ...lista];
+    setLista(novaLista);
 
-                <CaixaDeTexto label="Nome:" placeholder="Digite o nome" />
+    limparCampos();
+  };
 
-                <CaixaDeTexto label="Foto:" placeholder="Digite o endereço da sua imagem" />
-                <CaixaDeTexto label="Comida que não gosta:" placeholder="Digite uma comida que não gosta" />                <CaixaDeTexto label="Experiencia massa: " placeholder="Digite uma experiência positiva" />
+  const quantidadeEstudantes = useMemo(() => lista.length, [lista]);
 
-                <Botao label="Inserir" onClick="{onClick}"/>
-                <Botao label="Limpar dados" onClick="{onClick}"/>
-            </form>
+  return (
+    <section className="formulario">
+      <form onSubmit={criarCartao}>
+        <b>Preencha com os dados da mulher referência para criar um card</b>
+        <br />
+        <small>
+          <i>Atualmente há {quantidadeEstudantes} estudantes cadastradas</i>
+        </small>
+        <CaixaDeTexto
+          value={nome}
+          label="Nome"
+          placeholder="Digite o seu nome..."
+          handleChange={(e) => setNome(e.target.value)}
+        />
+        <CaixaDeTexto
+          value={foto}
+          label="Foto"
+          placeholder="Digite a url da sua foto..."
+          handleChange={(e) => setFoto(e.target.value)}
+        />
+        <CaixaDeTexto
+          value={comidaNaoGosta}
+          label="Comida que não gosta"
+          placeholder="Uma comida que não dá!!!"
+          handleChange={(e) => setComidaNaoGosta(e.target.value)}
+        />
+        <CaixaDeTexto
+          value={experienciaMassa}
+          label="Experiência massa"
+          placeholder="Conta ai.."
+          handleChange={(e) => setExperienciaMassa(e.target.value)}
+        />
+        <Botao texto="Criar card" acao={criarCartao} />
+      </form>
+    </section>
+  );
+};
 
-        </section>
-    )
-}
-
-export default Formulario; 
+export default Formulario;

@@ -1,20 +1,19 @@
-/*criando um componente */
-
+import Menu from "./Menu";
 import "./style.css";
 
 const Header = () => {
 
   return (
+<>
+<Menu />
+<header className="banner">
 
-    <header className="banner">
-
-      <img src="../../../public/img-banner.jpeg" />
-
+      <img src="../../../public/banner.png" />
     </header>
-
+</>
+    
   );
 
 };
 
 export default Header;
-/* para exportar */

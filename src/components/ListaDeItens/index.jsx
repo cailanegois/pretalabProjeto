@@ -1,7 +1,7 @@
 import './style.css'
 
 
-const ListaDeItens = ({label, opcoes })=> {
+const ListaDeItens = ({ label, opcoes }) => {
 
     return (
 
@@ -9,10 +9,9 @@ const ListaDeItens = ({label, opcoes })=> {
             <label>{label}</label>
             <select>
                 {opcoes.map((elemento, index) => {
- <option key={index}> {elemento} </option>
-                }
-               )}
-               
+            <option key={index}> {elemento} </option>
+                })}
+
             </select>
         </div>
 

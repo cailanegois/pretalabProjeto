@@ -6,13 +6,11 @@ const Rodape = () => {
 
     <footer id="rodape">
 
-    <p> Feito com amor e surtos por Cailane Gois</p>
-
-    </footer>
+    <p> Feito com amor e surtos por Cailane Gois</p>  </footer>
  )
 
   
  
 }
 
-export default Rodape
+export default Rodape;

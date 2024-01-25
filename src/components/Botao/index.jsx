@@ -1,11 +1,13 @@
 import './style.css'
 
-const Botao = ({ label, onClick }) => {
+const Botao = ({ texto, acao }) => {
+   
     return (
-        <button className="botao" onClick={onClick}>
-            {label}
-        </button>
-    )
-}
+      <button className="botao" onClick={acao}>
+        {texto}
+      </button>
+    );
+  };
+  
 
-export default Botao
+export default Botao; 
