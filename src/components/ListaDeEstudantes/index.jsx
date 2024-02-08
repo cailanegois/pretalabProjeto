@@ -13,8 +13,7 @@ const ListaEstudantes = ({lista}) => {
                     comidaQueNaoGosta={estudante.comidaQueNaoGosta}
                     experienciaPositiva={estudante.experienciaPositiva}
                     /> 
-           
-                       
+                     
            ))}
 
 

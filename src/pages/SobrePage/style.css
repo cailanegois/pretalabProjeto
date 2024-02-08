@@ -1,0 +1,16 @@
+main  {
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.texto-sobre p {
+    width: 60vw;
+    text-align: justify;
+
+}
+.texto-sobre {
+    height: 70vh;
+}
+
+

@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inika&family=Inter&family=Lora&family=Noticia+Text&family=Noto+Serif:wght@200&family=PT+Sans&display=swap'); 
+
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Roboto', 'sans-serif', 'Noto Serif', serif;
+   
+}
+
+main{
+    margin-top: 100px;
+
 }

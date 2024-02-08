@@ -3,9 +3,16 @@
     justify-content: center;
     margin: 20px 60px;
   }
+  .formulario {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  
+  }
   
   .formulario form {
-    max-width: 80%;
+    max-width: 60%;
     background-color: #f2f2f2;
     border-radius: 20px; /* arredondando as bordas */
     padding: 36px 64px; /* espaçamento */

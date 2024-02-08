@@ -1,0 +1,26 @@
+
+.section-principal{
+    display: flex; 
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-family: Roboto;
+   
+}
+.sobre-pretalab{
+    width: 60%;
+    padding: 20px;
+}
+
+.sobre-pretalab h3 {
+    font-family: roboto;
+    color:#6915b8;
+    font-weight: bold;
+}
+
+.imagem-silvana{
+    width: 40%;
+}

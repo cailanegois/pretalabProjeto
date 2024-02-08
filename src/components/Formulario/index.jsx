@@ -40,7 +40,7 @@ const Formulario = ({ lista, setLista }) => {
         <b>Preencha com os dados da mulher referência para criar um card</b>
         <br />
         <small>
-          <i>Atualmente há {quantidadeEstudantes} estudantes cadastradas</i>
+          <i>Atualmente há {quantidadeEstudantes} potências cadastradas</i>
         </small>
         <CaixaDeTexto
           value={nome}
