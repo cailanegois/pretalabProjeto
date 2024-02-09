@@ -19,7 +19,7 @@ const SobreMimPage = () => {
             <main>
 
                 <section className="boasvindas-section">
-                
+
                     <Avatar
                         alt="Cailane Gois é uma jovem negra de cabelo cacheado na altura dos ombros"
                         src="./cailanegois.png"
@@ -47,8 +47,8 @@ const SobreMimPage = () => {
                                 <CardMedia
                                     component="img"
                                     height="140"
-                                    image="/"
-                                    alt="adc foto"
+                                    image="/mulheresqueinspiram.png"
+                                    alt="imagem com fundo preto e frase 'mulheres que inspiram'"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h6" component="div" fontFamily='Roboto'> Mural de Inspirações
@@ -59,9 +59,8 @@ const SobreMimPage = () => {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Botao texto="Conhecer" acao="">
-
-                                </Botao>
+                            <Link to="/muraldeinspiracoes"> Conhecer</Link>
+                               
                             </CardActions>
                         </Card>
 
@@ -70,8 +69,8 @@ const SobreMimPage = () => {
                                 <CardMedia
                                     component="img"
                                     height="140"
-                                    image="/"
-                                    alt="adc foto"
+                                    image="/simbolodelocalizacao.png"
+                                    alt="Simbolo de localizacao vermelho sob um mapa e fundo preto"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h6" component="div" fontFamily='Roboto'> Consultar CEP
@@ -82,9 +81,7 @@ const SobreMimPage = () => {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Botao texto="Conhecer">
-
-                                </Botao>
+                                <Link to="/consultacep">Conhecer </Link>
                             </CardActions>
                         </Card>
 
@@ -93,8 +90,8 @@ const SobreMimPage = () => {
                                 <CardMedia
                                     component="img"
                                     height="140"
-                                    image="/"
-                                    alt="adc foto"
+                                    image="/iconedepokemon.png"
+                                    alt="um desenho de pokemon amarelo com fundo preto"
                                 />
                                 <CardContent>
                                     <Typography gutterBottom variant="h6" component="div" fontFamily='Roboto'> Mural de Pokemons
@@ -105,9 +102,8 @@ const SobreMimPage = () => {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Botao texto="Conhecer">
-                                    <Link to="/pokemons" />
-                                </Botao>
+
+                                <Link to="/pokemons"> Conhecer</Link>
                             </CardActions>
                         </Card>
                     </div>
@@ -123,18 +119,18 @@ const SobreMimPage = () => {
                     <h3> "Você é do tamanho dos seus sonhos. </h3>
 
                     <p>
-                       Eu sou Cailane Gois, técnica em informática e Desenvolvedora front-end em formação, gosto de pensar a tecnologia como uma ferramenta de empoderamento social e aprendizado constante. Sou jovem líder pela Academia de Liderança da América Latina onde venho aprendendo sobre análise de dados com o time de Dados e Tecnologia (LDTT). Atualmente também sou diretora do time de escritoras do STEM para Minas, um projeto que visa impusionar meninas e mulheres na tecnologia. Vamos tomar um café? <a href="mailto:cailanegois@yahoo.com">Entre em contato comigo! </a>
+                        Eu sou Cailane Gois, técnica em informática e Desenvolvedora front-end em formação, gosto de pensar a tecnologia como uma ferramenta de empoderamento social e aprendizado constante. Sou jovem líder pela Academia de Liderança da América Latina onde venho aprendendo sobre análise de dados com o time de Dados e Tecnologia (LDTT). Atualmente também sou diretora do time de escritoras do STEM para Minas, um projeto que visa impusionar meninas e mulheres na tecnologia. Vamos tomar um café? <a href="mailto:cailanegois@yahoo.com">Entre em contato comigo! </a>
                     </p>
 
-                  
-                    <div className="section-formacao">
-                    <h3> Formação </h3>
-                    <div className="timelineContainer">
-                    <Timeline/>
 
-                
-                    </div>
-                    
+                    <div className="section-formacao">
+                        <h3> Formação </h3>
+                        <div className="timelineContainer">
+                            <Timeline />
+
+
+                        </div>
+
                     </div>
 
                 </section>
